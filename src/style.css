@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+html{
+    margin: 0;
+    background-color: #222222;
+    overflow-y: auto;
+
+}
+.img {
+    background-image: url("assets/back.jpg");
+    min-height: 100%;
+    min-width: 1024px;
+   
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /*position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;*/
+   
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+
+}
+button{
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    border:none;
+    border-radius: 20px;
+    background-color:yellow;    
+    cursor: pointer;
+    padding:20px;
+    margin:20px;
+}
+.selected{
+    padding:20px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    border:none;
+    border-radius: 20px;
+    outline:none;
+    background-color:black;
+    color:yellow;
+    cursor: pointer;
+    margin:20px
+    
+}
+ul{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+}
+p{
+    font-size: 25px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 35px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+}
+#food{
+    transition: transform .2s; /* Animation */
+}
+#food:hover{
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+    
+   
+}
+.card {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin:auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Lower z-index */
+    width: 900px;
+    text-align: center;
+    height:300px;
+    z-index: -1 ;
+   
+    
+  }
+
+  #contact-form{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+  }
