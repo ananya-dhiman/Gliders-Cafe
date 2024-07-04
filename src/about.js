@@ -1,11 +1,14 @@
 // about.js
 export function loadAboutPage() {
-    const aboutContainer = document.createElement('div');
-    aboutContainer.style.maxWidth = '900px';
-    aboutContainer.style.margin = '0 auto';
-    aboutContainer.style.textAlign = 'center';
-    aboutContainer.style.display= 'flex';
-    aboutContainer.style.flexDirection='column';
+     // Create the card container
+     const cardContainer = document.createElement('div');
+     cardContainer.style.backgroundColor = 'rgba(255, 255, 0, 0.5)'; // yellowish color with transparency
+     cardContainer.style.borderRadius = '15px';
+     cardContainer.style.padding = '40px';
+     cardContainer.style.margin = '20px auto';
+     cardContainer.style.width='900px'; 
+     cardContainer.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+     cardContainer.style.textAlign = 'center';
     // Create heading for About page
     const aboutHeading = document.createElement('h2');
     aboutHeading.textContent="About";
@@ -28,10 +31,10 @@ export function loadAboutPage() {
     additionalInfo.style.textAlign="center";
     additionalInfo.style.fontSize="30px";
     // Append elements to content
-    aboutContainer.appendChild(aboutHeading);
-    aboutContainer.appendChild(aboutText);
-    aboutContainer.appendChild(additionalInfo);
-    content.appendChild(aboutContainer);
+    cardContainer.appendChild(aboutHeading);
+    cardContainer.appendChild(aboutText);
+    cardContainer.appendChild(additionalInfo);
+    content.appendChild(cardContainer);
 
    
   

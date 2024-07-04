@@ -126,3 +126,28 @@ h2{
     align-items: center;
 
   }
+#main{
+    width: 150px;
+    height:150px;
+    transition: transform .2s; /* Animation */
+    margin: auto;
+   
+}
+#main:hover{
+    transform:scale(1.2)
+}
+#cardContainer {
+    
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 150px auto 0px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
